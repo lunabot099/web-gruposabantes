@@ -84,3 +84,31 @@ body{font-family:var(--font-main);font-size:16px;line-height:24px;font-weight:40
 
 .whatsapp{display:flex!important;align-items:center!important;justify-content:center!important;width:58px;height:58px;border-radius:999px;background:#25d366!important;padding:0!important;overflow:hidden}.whatsapp svg{width:34px;height:34px;display:block;fill:#fff;transform:translateX(.5px)}.whatsapp img{display:none!important}.whatsapp:before{display:none!important}
 @media(max-width:960px){.whatsapp{width:54px;height:54px}.whatsapp svg{width:32px;height:32px}}
+/* Final WhatsApp floating button override: one centered white icon only */
+.whatsapp,
+a.whatsapp{
+  position:fixed!important;
+  right:18px!important;
+  bottom:18px!important;
+  width:58px!important;
+  height:58px!important;
+  border-radius:999px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:#25d366!important;
+  color:#fff!important;
+  padding:0!important;
+  overflow:hidden!important;
+  font-size:0!important;
+  line-height:1!important;
+}
+.whatsapp::before,
+a.whatsapp::before{content:none!important;display:none!important;width:0!important;height:0!important;background:none!important;mask:none!important;-webkit-mask:none!important}
+.whatsapp img,
+a.whatsapp img{display:none!important}
+.whatsapp .waSvg,
+a.whatsapp .waSvg{width:34px!important;height:34px!important;display:block!important;fill:#fff!important;color:#fff!important;transform:none!important;margin:0!important;flex:0 0 auto!important}
+.whatsapp .waSvg path,
+a.whatsapp .waSvg path{fill:#fff!important;stroke:none!important}
+@media(max-width:960px){.whatsapp,a.whatsapp{right:14px!important;bottom:14px!important;width:54px!important;height:54px!important}.whatsapp .waSvg,a.whatsapp .waSvg{width:32px!important;height:32px!important}}
