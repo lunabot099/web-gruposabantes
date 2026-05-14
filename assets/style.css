@@ -49,3 +49,16 @@ body{font-family:var(--font-main);font-size:16px;line-height:24px;font-weight:40
 
 /* v14 alignment fixes: WhatsApp icon, hero eyebrow and red buttons */
 .hero .eyebrow{display:block;width:100%;text-align:center;margin-left:auto;margin-right:auto}.btn{ text-align:center }.actions,.contactForm button[type="submit"]{justify-content:center}.contactForm button[type="submit"]{justify-self:center}.preFooterBox .btn,.contactBox .btn{margin-left:auto;margin-right:auto}.whatsapp{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;line-height:1!important;overflow:hidden}.whatsapp:before{width:34px!important;height:34px!important;margin:0!important;display:block!important;transform:none!important;background:#fff!important}@media(max-width:760px){.whatsapp{width:58px!important;height:58px!important}.whatsapp:before{width:34px!important;height:34px!important}.hero .eyebrow{text-align:center!important}.actions{width:100%;justify-content:center!important}.actions .btn{width:min(100%,320px)}}
+
+/* v15 force red CTA centering on mobile */
+@media(max-width:760px){
+  .btn{margin-left:auto!important;margin-right:auto!important;text-align:center!important;width:max-content;max-width:100%;}
+  .actions{display:flex!important;justify-content:center!important;align-items:center!important;text-align:center!important;}
+  .actions .btn{display:flex!important;width:min(100%,320px)!important;margin-left:auto!important;margin-right:auto!important;}
+  .preFooterBox,.contactBox{text-align:center!important;}
+  .preFooterBox .btn,.contactBox .btn{display:flex!important;width:min(100%,320px)!important;margin-left:auto!important;margin-right:auto!important;}
+  p[style*="margin-top:28px"]{text-align:center!important;}
+  p[style*="margin-top:28px"] .btn{display:flex!important;width:min(100%,280px)!important;}
+  .card .btn{display:flex!important;margin-left:auto!important;margin-right:auto!important;}
+  .contactForm button[type="submit"]{display:flex!important;width:min(100%,280px)!important;margin-left:auto!important;margin-right:auto!important;justify-self:center!important;}
+}
