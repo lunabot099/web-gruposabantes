@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
+  if(new URLSearchParams(window.location.search).get('error')==='1') document.body.classList.add('error-contact');
   const nav=document.querySelector('.nav');
   const btn=document.querySelector('.menuToggle');
   const menu=document.querySelector('.menu');
