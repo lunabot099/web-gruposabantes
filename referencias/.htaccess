@@ -1,0 +1,2 @@
+# Referencias internas: no servir públicamente en producción Apache.
+Require all denied
