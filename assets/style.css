@@ -182,3 +182,11 @@ body:has(.cleanArticle) .articleHeroImage img{width:min(520px,78vw)!important;ma
 .articleInlineImage{margin:26px auto!important;max-width:520px!important;text-align:center!important}
 .articleInlineImage img{width:100%!important;max-height:300px!important;object-fit:contain!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;border-radius:0!important;margin:0 auto!important}
 @media(max-width:760px){body:has(.cleanArticle) .articleHeroImage{margin-top:14px;margin-bottom:10px}body:has(.cleanArticle) .articleHeroImage img{width:min(320px,82vw)!important;max-height:220px!important}.articleInlineImage{max-width:320px!important;margin:22px auto!important}.articleInlineImage img{max-height:220px!important}}
+
+
+/* Article feature list blocks */
+.articleFeatureList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:26px 0 28px}
+.articleFeatureList article{padding:20px;border-radius:20px;background:#faf8ff;border:1px solid #eee8f5}
+.articleFeatureList h3{margin:0 0 8px!important;font-size:21px!important;color:#e52323!important}
+.articleFeatureList p{margin:0!important;font-size:16px!important;line-height:1.6!important}
+@media(max-width:760px){.articleFeatureList{grid-template-columns:1fr;gap:14px}.articleFeatureList article{padding:18px}}
