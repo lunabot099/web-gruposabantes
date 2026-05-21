@@ -136,3 +136,8 @@ a.whatsapp .waSvg path{fill:#fff!important;stroke:none!important}
 .cleanArticleBody img,.cleanArticleBody picture,.cleanArticleBody figure{display:block!important}
 .cleanArticleBody iframe,.cleanArticleBody svg{display:block}
 @media(max-width:760px){.cleanArticleBody{width:min(100% - 24px,1040px);padding:28px}.articleHeroImage{margin-top:-10px;margin-bottom:24px}.articleHeroImage img{border-radius:22px;max-height:360px}}
+
+
+/* Blog original artwork cards */
+.blogGrid .post>a img{aspect-ratio:1/1;object-fit:contain;background:#fff;padding:10px}
+.articleHeroImage img{object-fit:contain;background:#fff;padding:16px}
