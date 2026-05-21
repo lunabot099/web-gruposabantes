@@ -14,17 +14,18 @@ document.addEventListener('DOMContentLoaded',()=>{
     }));
   }
 
-  const heroLottie=document.querySelector('[data-lottie]');
-  if(heroLottie&&window.lottie){
-    const fallback=heroLottie.querySelector('img');
+  document.querySelectorAll('[data-lottie]').forEach((lottieEl)=>{
+    if(!window.lottie || lottieEl.dataset.lottieLoaded==='true') return;
+    const fallback=lottieEl.querySelector('img');
     window.lottie.loadAnimation({
-      container:heroLottie,
+      container:lottieEl,
       renderer:'svg',
       loop:true,
       autoplay:true,
-      path:heroLottie.dataset.lottie
+      path:lottieEl.dataset.lottie
     });
     if(fallback) fallback.remove();
-    heroLottie.classList.add('isLottieLoaded');
-  }
+    lottieEl.classList.add('isLottieLoaded');
+    lottieEl.dataset.lottieLoaded='true';
+  });
 });
