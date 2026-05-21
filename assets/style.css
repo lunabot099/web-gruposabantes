@@ -147,3 +147,9 @@ a.whatsapp .waSvg path{fill:#fff!important;stroke:none!important}
 .blogGrid .post>a{display:flex;justify-content:center;padding:24px 24px 4px;background:#fff}
 .blogGrid .post>a img{width:168px!important;height:168px!important;aspect-ratio:1/1!important;object-fit:cover!important;border-radius:999px!important;background:#fff!important;padding:0!important;margin:0 auto;box-shadow:0 14px 34px rgba(30,20,50,.12)}
 @media(max-width:760px){.blogGrid .post>a{padding:20px 20px 0}.blogGrid .post>a img{width:140px!important;height:140px!important}}
+
+
+/* Original images inside blog articles */
+.articleInlineImage{margin:34px 0;display:block!important}
+.articleInlineImage img{width:100%;max-height:560px;object-fit:contain;background:#fff;border-radius:26px;box-shadow:0 20px 55px rgba(30,20,50,.12);border:1px solid #eee8f5;padding:10px}
+@media(max-width:760px){.articleInlineImage{margin:24px 0}.articleInlineImage img{border-radius:18px;max-height:360px;padding:6px}}
