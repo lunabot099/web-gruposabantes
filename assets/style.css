@@ -190,3 +190,10 @@ body:has(.cleanArticle) .articleHeroImage img{width:min(520px,78vw)!important;ma
 .articleFeatureList h3{margin:0 0 8px!important;font-size:21px!important;color:#e52323!important}
 .articleFeatureList p{margin:0!important;font-size:16px!important;line-height:1.6!important}
 @media(max-width:760px){.articleFeatureList{grid-template-columns:1fr;gap:14px}.articleFeatureList article{padding:18px}}
+
+
+/* Contextual icons instead of numbers */
+.trustIcon,.sectorIcon{font-size:0!important}
+.trustIcon svg,.sectorIcon svg{width:25px;height:25px;display:block;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.sectorIcon{width:52px!important;height:52px!important;border-radius:18px!important}
+.trustIcon{width:48px!important;height:48px!important;border-radius:16px!important;display:grid;place-items:center;background:linear-gradient(135deg,#e52323,#ff3b30);box-shadow:0 14px 32px rgba(229,35,35,.22);margin-bottom:18px}
