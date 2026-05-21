@@ -116,8 +116,8 @@ a.whatsapp .waSvg path{fill:#fff!important;stroke:none!important}
 
 /* Success cards lottie icons above titles */
 .successGrid .card{text-align:center;overflow:hidden}
-.successLottie{width:118px;height:118px;margin:0 auto 14px;display:grid;place-items:center;filter:drop-shadow(0 16px 28px rgba(229,35,35,.18))}
+.successLottie{width:138px;height:138px;margin:0 auto 16px;display:grid;place-items:center;filter:drop-shadow(0 16px 28px rgba(229,35,35,.18))}
 .successLottie svg{width:100%!important;height:100%!important;display:block}
 .successGrid .card h3{text-align:center;margin-top:0}
 .successGrid .card p{text-align:center}
-@media(max-width:960px){.successLottie{width:104px;height:104px;margin-bottom:12px}}
+@media(max-width:960px){.successLottie{width:118px;height:118px;margin-bottom:14px}}
